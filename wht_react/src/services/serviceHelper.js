@@ -20,7 +20,7 @@ const onGlobalError = (err) => {
   return Promise.reject(err);
 };
 
-const API_HOST_PREFIX = "https://localhost:5001";
+const API_HOST_PREFIX = "https://whathappenstoday.com";
 const API_NODE_HOST_PREFIX = "";
 
 //console.log("API_HOST_PREFIX", API_HOST_PREFIX);

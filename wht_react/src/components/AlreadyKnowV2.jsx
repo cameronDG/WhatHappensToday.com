@@ -85,7 +85,7 @@ const AlreadyKnowV2 = (props) => {
             onSubmit={addRecap}
             validationSchema={recapValidationSchema}
           >
-            {({ values, handleChange, touched, errors }) => (
+            {({ values, handleChange, touched, errors, setFieldValue }) => (
               <Form>
                 <TextField
                   fullWidth
@@ -115,7 +115,7 @@ const AlreadyKnowV2 = (props) => {
                   <button
                     className="link-button ms-4"
                     type="button"
-                    onClick={() => setRecap({ overview: "" })}
+                    onClick={() => setFieldValue("overview", "")}
                   >
                     Clear
                   </button>

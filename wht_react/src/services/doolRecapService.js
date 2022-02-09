@@ -2,7 +2,7 @@ import axios from "axios";
 import { onGlobalError, onGlobalSuccess } from "./serviceHelper";
 
 const doolRecapEndpoint = "https://api.themoviedb.org/3/tv/881";
-const doolApiKey = "?api_key=326121d896f20a68d932d2ef07fd1917";
+const doolApiKey = "?api_key=";
 
 const getToday = () => {
   const config = {
